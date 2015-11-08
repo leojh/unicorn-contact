@@ -1,0 +1,7 @@
+<div class="col-xs-10">
+  <button type="button" class="btn btn-primary" {{action 'goToEditContact' model}}>
+    <i class="fa fa-edit"></i>
+    Edit
+  </button>
+  {{contact-form contact=model editable=true readonly=true}}
+</div>

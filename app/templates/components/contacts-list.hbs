@@ -1,0 +1,14 @@
+<div>
+  <div class="row">
+    {{input type="text" class="form-control contact-search" placeholder="Search Contacts..." value=searchContacts}}
+    <button type="button" class="btn btn-primary pull-right">
+      <i class="fa fa-user-plus" />
+    </button>
+  </div>
+
+  <br>
+
+  {{#each filteredContacts as |c|}}
+    <p class="bg-info some-padding pointer" {{action 'contactSelected' c}}>{{c.first}} {{c.last}}</p>
+  {{/each}}
+</div>
